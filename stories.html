@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>歩みの間に — Ayumi no Aida</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #f2f5ff;
+            background:
+                radial-gradient(circle at top, #20204a 0%, #101329 45%, #080a16 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: min(900px, 92%);
+            margin: auto;
+            padding: 60px 0 80px;
+        }
+
+        /* =========================
+           JUDUL CERITA
+        ========================= */
+
+        .story-header {
+            text-align: center;
+            padding: 55px 25px;
+            border: 1px solid #34395f;
+            border-radius: 20px;
+            background: #12162f;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+        }
+
+        .story-title-jp {
+            font-size: clamp(40px, 8vw, 70px);
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .story-title {
+            margin-top: 12px;
+            font-size: 24px;
+            color: #bdd8ff;
+        }
+
+        .story-subtitle {
+            margin-top: 8px;
+            color: #929dbb;
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           BAGIAN
+        ========================= */
+
+        .section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            margin-bottom: 18px;
+            color: #c8dcff;
+            font-size: 19px;
+            letter-spacing: 2px;
+        }
+
+
+        /* =========================
+           DATA CERITA
+        ========================= */
+
+        .story-info {
+            padding: 25px;
+            background: #11152b;
+            border: 1px solid #2d3354;
+            border-radius: 16px;
+            line-height: 1.8;
+        }
+
+        .info-label {
+            color: #9fc4f5;
+            font-weight: bold;
+        }
+
+        .genres {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .genre {
+            padding: 7px 12px;
+            border-radius: 20px;
+            background: #202646;
+            color: #dceaff;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           KARTU PART
+        ========================= */
+
+        .parts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .part-card {
+            display: block;
+            text-decoration: none;
+            color: white;
+
+            padding: 24px 25px;
+
+            background: #151936;
+            border: 1px solid #30365a;
+            border-radius: 15px;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .part-card:nth-child(even) {
+            background: #11142c;
+        }
+
+        .part-card:hover {
+            transform: translateY(-3px);
+            background: #1c2243;
+            border-color: #719bd2;
+        }
+
+        .part-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .part-number {
+            color: #91bfff;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .part-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .part-episodes {
+            margin-top: 7px;
+            color: #929dbc;
+            font-size: 14px;
+        }
+
+        .arrow {
+            color: #aacfff;
+            font-size: 28px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 55px;
+            text-align: center;
+            color: #626b88;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           HP
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 94%;
+                padding-top: 30px;
+            }
+
+            .story-header {
+                padding: 40px 18px;
+            }
+
+            .part-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <main class="container">
+
+        <!-- =========================
+             HEADER CERITA
+        ========================== -->
+
+        <header class="story-header">
+
+            <div class="story-title-jp">
+                歩みの間に
+            </div>
+
+            <div class="story-title">
+                Ayumi no Aida
+            </div>
+
+            <div class="story-subtitle">
+                “Di Antara Langkah”
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             DATA TENTANG CERITA
+        ========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                DATA TENTANG CERITA
+            </h2>
+
+            <div class="story-info">
+
+                <div>
+                    <span class="info-label">Judul:</span>
+                    歩みの間に — Ayumi no Aida
+                </div>
+
+                <div>
+                    <span class="info-label">Arti:</span>
+                    “Di Antara Langkah”
+                </div>
+
+                <div>
+                    <span class="info-label">Latar:</span>
+                    SMA Hoshizora
+                </div>
+
+                <div>
+                    <span class="info-label">Tokoh utama:</span>
+                    Renji Takahashi & Aoi Mizuhara
+                </div>
+
+                <div style="margin-top: 12px;">
+                    <span class="info-label">Genre:</span>
+                </div>
+
+                <div class="genres">
+
+                    <span class="genre">Romance</span>
+                    <span class="genre">Slice of Life</span>
+                    <span class="genre">School</span>
+                    <span class="genre">Drama</span>
+                    <span class="genre">Coming-of-Age</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DAFTAR BAGIAN CERITA
+        ========================== -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                DAFTAR BAGIAN CERITA
+            </h2>
+
+            <div class="parts">
+
+
+                <!-- PART 1 -->
+
+                <a href="season1part1.html" class="part-card">
+
+                    <div class="part-content">
+
+                        <div>
+
+                            <div class="part-number">
+                                SEASON 1
+                            </div>
+
+                            <div class="part-title">
+                                Part 1
+                            </div>
+
+                            <div class="part-episodes">
+                                Episode 1 — 6
+                            </div>
+
+                        </div>
+
+                        <div class="arrow">
+                            →
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PART 2 -->
+
+                <a href="season1part2.html" class="part-card">
+
+                    <div class="part-content">
+
+                        <div>
+
+                            <div class="part-number">
+                                SEASON 1
+                            </div>
+
+                            <div class="part-title">
+                                Part 2
+                            </div>
+
+                            <div class="part-episodes">
+                                Episode 7 — 12
+                            </div>
+
+                        </div>
+
+                        <div class="arrow">
+                            →
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            歩みの間に · Ayumi no Aida
+        </footer>
+
+    </main>
+
+</body>
+</html>
